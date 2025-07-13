@@ -1,0 +1,243 @@
+/* Estilos generales para toda la página */
+body {
+  font-family: 'Georgia', serif;
+  background-color: #f4f1e9;
+  /* Un color crema claro para el fondo */
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo para el encabezado de la página */
+header {
+  background-color: #dfd10c;
+  /* Color marrón silla de montar */
+  color: #32c932;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 5px solid #63e70b;
+  text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+  /* delineado negro */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+/* Contenedor principal que usa Flexbox para las columnas */
+.container {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  /* Espacio entre las dos columnas */
+}
+
+/* Columna izquierda (ocupa 2/3 del espacio) */
+.left-column {
+  flex: 2;
+  /* Le da más peso que a la derecha */
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  border: 3px solid #31c414;
+
+}
+
+.left-column h2,
+.left-column h3 {
+  color: #dfd10c;
+  text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+  /* delineado negro */
+
+}
+
+/* Estilo para la imagen */
+.left-column img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 15px;
+  border: 3px solid #ddd;
+}
+
+.caption {
+  font-size: 0.9em;
+  text-align: center;
+  color: #666;
+  font-style: italic;
+}
+
+/* Columna derecha (ocupa 1/3 del espacio) */
+.right-column {
+  flex: 1;
+  background-color: #71c74a;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  border: 5px solid #dfd10c;
+}
+
+.right-column h3 {
+  text-align: center;
+  color: #dfd10c;
+  /* Amarillo */
+  font-size: 24px;
+  /* Tamaño del texto */
+  text-shadow:
+    -1px -1px 0 green,
+    1px -1px 0 green,
+    -1px 1px 0 green,
+    1px 1px 0 green;
+  /* Delineado verde */
+}
+
+
+/* Estilo para las cajas del cuadro comparativo */
+.comparative-box {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.comparative-box h4 {
+  margin-top: 0;
+  color: #8B4513;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+/* Estilo para los elementos editables */
+[contenteditable="true"] {
+  background-color: #fffacd;
+  /* Amarillo limón para destacar que es editable */
+  padding: 2px 4px;
+  border-radius: 3px;
+  cursor: text;
+}
+
+/* Para que la página se vea mejor en pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    /* Las columnas se apilan una sobre otra */
+  }
+}
+
+.contenedor-imagen {
+  text-align: center;
+  /* o left, right */
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.evento {
+  background-color: #f0f4c3;
+  border-left: 6px solid #cddc39;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.evento h3 {
+  color: #558b2f;
+  margin-bottom: 8px;
+}
+
+/* Listas internas */
+ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Enlaces generales */
+a {
+  color: #33691e;
+}
+
+a:hover {
+  color: #689f38;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+
+
+
+    /* Estilos para el cuadro de información */
+    .cuadro-informacion {
+      background-color: #e6f7e6;
+      /* Un verde muy claro, similar al de tu imagen */
+      border: 1px solid #c0e6c0;
+      /* Un borde verde un poco más oscuro */
+      padding: 20px;
+      /* Espacio interno alrededor del contenido del cuadro */
+      margin-bottom: 20px;
+      /* Margen en la parte inferior para separarlo de otros elementos */
+      border-radius: 8px;
+      /* Bordes ligeramente redondeados */
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+      /* Sombra suave para darle profundidad */
+    }
+
+    /* Estilos para el título dentro del cuadro */
+    .cuadro-informacion h4 {
+      color: #4CAF50;
+      /* Un color verde más oscuro para el título */
+      margin-top: 0;
+      /* Elimina el margen superior por defecto del h4 */
+      margin-bottom: 15px;
+      /* Espacio debajo del título */
+      font-size: 1.4em;
+      /* Tamaño de fuente para el título */
+    }
+
+    /* Estilos para los párrafos dentro del cuadro */
+    .cuadro-informacion p {
+      line-height: 1.6;
+      /* Altura de línea para mejorar la legibilidad */
+      color: #333;
+      /* Color de texto más oscuro */
+    }
+
+    /* Estilos para las listas dentro del cuadro */
+    .cuadro-informacion ul {
+      list-style: disc;
+      /* Tipo de viñeta para la lista */
+      margin-left: 20px;
+      /* Sangría para la lista */
+      padding-left: 0;
+      /* Asegura que no haya padding extra */
+    }
+
+    .cuadro-informacion ul li {
+      margin-bottom: 8px;
+      /* Espacio entre los elementos de la lista */
+      color: #333;
+      /* Color de texto para los elementos de la lista */
+    }
+
+    .cuadro-informacion ul li strong {
+      color: #000;
+      /* Hace el texto de las etiquetas <strong> más oscuro */
+    }
