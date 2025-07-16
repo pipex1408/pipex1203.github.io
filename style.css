@@ -1,36 +1,31 @@
-/* Asegura que html y body ocupen toda la altura de la ventana */
-html, body {
-    height: 100%; /* Hace que html y body tomen el 100% de la altura del viewport */
-    margin: 0;   /* Elimina márgenes por defecto */
-    padding: 0;  /* Elimina paddings por defecto */
-    box-sizing: border-box; /* Una buena práctica para manejar padding y border */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Estilos generales para toda la página */
 body {
     font-family: 'Georgia', serif;
-    background-color: #f4f1e9; /* Un color crema claro para el fondo */
+    background-color: #f4f1e9;
     color: #000000;
-    /* margin y padding ya definidos en html, body */
-
-    /* <<-- ESTAS TRES LÍNEAS SON FUNDAMENTALES PARA EL COMPORTAMIENTO DE COLUMNAS -->> */
-    display: flex;         /* Convierte el body en un contenedor flex */
-    flex-direction: column; /* Organiza sus hijos (header, main, etc.) verticalmente */
-    min-height: 100vh;     /* Asegura que el body ocupe al menos toda la altura de la ventana */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-/* Estilo para el encabezado de la página */
 header {
-    background-color: #fff019; /* Color amarillo fuerte */
-    color: #32c932; /* Verde esmeralda */
+    background-color: #e6d81d;
+    color: #32c932;
     padding: 20px;
     text-align: center;
-    border-bottom: 5px solid #63e70b; /* Borde inferior verde lima */
+    border-bottom: 5px solid #63e70b;
     text-shadow:
         -1px -1px 0 black,
         1px -1px 0 black,
         -1px 1px 0 black,
-        1px 1px 0 black; /* Delineado negro */
+        1px 1px 0 black;
 }
 
 header h1 {
@@ -38,42 +33,33 @@ header h1 {
     font-size: 2.5em;
 }
 
-/* Contenedor principal que usa Flexbox para las columnas */
 .container {
     display: flex;
     padding: 20px;
-    gap: 20px; /* Espacio entre las dos columnas */
-
-    /* <<-- ESTA LÍNEA ES CLAVE para que los hijos no se estiren por defecto -->> */
-    align-items: flex-start; /* Hace que las columnas se alineen al inicio y no se estiren por defecto */
-
-    /* <<-- ESTA LÍNEA ES CLAVE para que el .container crezca y ocupe el espacio restante -->> */
-    flex-grow: 1; /* Permite que el contenedor principal ocupe todo el espacio vertical disponible */
+    gap: 20px;
+    align-items: flex-start;
+    flex-grow: 1;
 }
 
-/* Columna izquierda (ocupa 2/3 del espacio) */
 .left-column {
-    flex: 2; /* Le da más peso que a la derecha */
+    flex: 2;
     background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
-    border: 3px solid #31c414; /* Borde verde */
-
-    /* <<-- ESTA LÍNEA ES CLAVE para que la columna izquierda se estire -->> */
-    align-self: stretch; /* Hace que la columna izquierda se estire para rellenar la altura del contenedor */
+    border: 3px solid #31c414;
+    align-self: stretch;
 }
 
 .left-column h2,
 .left-column h3 {
-    color: #dfd10c; /* Amarillo */
+    color: #dfd10c;
     text-shadow:
         -1px -1px 0 black,
         1px -1px 0 black,
         -1px 1px 0 black,
-        1px 1px 0 black; /* Delineado negro */
+        1px 1px 0 black;
 }
 
-/* Estilo para la imagen dentro de la columna izquierda */
 .left-column img {
     max-width: 100%;
     height: auto;
@@ -89,40 +75,38 @@ header h1 {
     font-style: italic;
 }
 
-/* Columna derecha (ocupa 1/3 del espacio) */
 .right-column {
     flex: 1;
-    background-color: #71c74a; /* Verde más oscuro */
+    background-color: #71c74a;
     padding: 20px;
     border-radius: 8px;
-    border: 5px solid #dfd10c; /* Borde amarillo */
-    /* align-self: flex-start; no es necesario aquí porque el padre ya tiene align-items: flex-start; */
+    border: 5px solid #dfd10c;
 }
 
 .right-column h3 {
     text-align: center;
-    color: #dfd10c; /* Amarillo */
+    color: #dfd10c;
     font-size: 24px;
     text-shadow:
         -1px -1px 0 green,
         1px -1px 0 green,
         -1px 1px 0 green,
-        1px 1px 0 green; /* Delineado verde */
+        1px 1px 0 green;
 }
 
-/* Estilo para las cajas de información (Cuadro Comparativo, Datos Simón Bolívar, etc.) */
 .comparative-box {
-    background-color: #e7eb18; /* Amarillo más claro */
-    border: 1px solid #ccc;
+    background-color: #ffffff;
+    border: 1px solid #eeff00;
     padding: 15px;
     margin-bottom: 15px;
     border-radius: 5px;
+
 }
 
 .comparative-box h4 {
     margin-top: 0;
-    color: #2ead0e; /* Verde oscuro */
-    border-bottom: 2px solid #ddd;
+    color: #cbdf17;
+    border-bottom: 2px solid #e4e006;
     padding-bottom: 5px;
     text-shadow:
         -1px -1px 0 black,
@@ -131,9 +115,6 @@ header h1 {
         1px 1px 0 black;
 }
 
-
-
-
 .timeline {
     display: flex;
     flex-direction: column;
@@ -141,19 +122,18 @@ header h1 {
 }
 
 .evento {
-    background-color: #f0f4c3; /* Verde claro */
-    border-left: 6px solid #cddc39; /* Borde izquierdo verde lima */
+    background-color: #f0f4c3;
+    border-left: 6px solid #9fa75e;
     padding: 15px;
     border-radius: 8px;
 }
 
 .evento h3 {
-  font-size: xx-large;
-    color: #558b2f; /* Verde oscuro */
+    font-size: xx-large;
+    color: #558b2f;
     margin-bottom: 8px;
 }
 
-/* Listas internas */
 ul {
     margin-top: 10px;
     padding-left: 20px;
@@ -163,7 +143,6 @@ li {
     margin-bottom: 8px;
 }
 
-/* Enlaces generales */
 a {
     color: #33691e;
 }
@@ -173,13 +152,141 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Responsive para pantallas pequeñas (móviles) */
 @media (max-width: 768px) {
     .container {
-        flex-direction: column; /* Las columnas se apilan una sobre otra */
+        flex-direction: column;
     }
 
     header h1 {
         font-size: 2em;
     }
+}
+
+.destinos li {
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 15px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    color: white;
+    list-style: none;
+}
+
+.destinos li ul {
+    margin-top: 10px;
+    padding-left: 20px;
+    color: #f0f0f0;
+}
+
+.destino-cartagena {
+    background-color: #e5e910;
+    /* azul */
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+}
+
+.destino-mompox {
+    background-color: #11c05f;
+    /* morado */
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+}
+
+.destino-magangue {
+    background-color: #2e7d32;
+    /* verde oscuro */
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+}
+
+.destino-montes {
+    background-color: #8dee3e;
+    /* naranja fuerte */
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+}
+
+.destino-sanjuan {
+    background-color: #b8ca10;
+    /* rojo */
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+}
+
+.destino-banco {
+    background-color: #3949ab;
+    /* azul violeta */
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+}
+
+.destino-palenque {
+    background-color: #455a64;
+    /* gris oscuro */
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+}
+
+.logo-empresa {
+    text-align: center;
+    /* centra horizontalmente el contenido */
+    margin-top: 20px;
+}
+
+.logo {
+    width: 350px;
+    /* puedes ajustar este valor */
+    max-width: 100%;
+    height: auto;
+    /* mantiene la proporción original */
+    border-radius: 10px;
+    /* opcional: bordes redondeados */
+}
+
+.contenido li {
+    background-color: #ebe727;
+    /* fondo claro */
+    border: 2px solid #43af19;
+    /* borde en tono verde limón */
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 12px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    list-style-type: none;
+    /* quitar viñetas si no quieres las bolitas negras */
+    transition: transform 0.2s;
+    text-decoration: none;
+    /* quita la línea debajo */
+    color: #333;
+    /* puedes cambiar el color del texto si lo deseas */
+    font-weight: bold;
+    text-decoration: underline;
+    /* si quieres que se subraye solo al pasar el mouse */
+    color: #8bc34a;
+    /* efecto hover en color verde */
+}
+
+.contenido li:hover {
+    transform: scale(1.02);
+    background-color: #f0f4c3;
 }
