@@ -7,20 +7,21 @@ body {
 }
 
 body {
-    font-family: 'Georgia', serif;
-    background-color: #f4f1e9;
+    font-family: 'IM Fell English', 'Cinzel', serif;
+    background-color: #F6B571;
     color: #000000;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-size: 1.2em; /* Aumenta el tamaño base del texto */
 }
 
 header {
-    background-color: #e6d81d;
-    color: #32c932;
+    background-color: #F5DD9C;
+    color: #F6B571;
     padding: 20px;
     text-align: center;
-    border-bottom: 5px solid #63e70b;
+    border-bottom: 5px solid #BED476;
     text-shadow:
         -1px -1px 0 black,
         1px -1px 0 black,
@@ -43,16 +44,16 @@ header h1 {
 
 .left-column {
     flex: 2;
-    background-color: #ffffff;
+    background-color: #F5DD9C;
     padding: 20px;
     border-radius: 8px;
-    border: 3px solid #31c414;
+    border: 3px solid #BED476;
     align-self: stretch;
 }
 
 .left-column h2,
 .left-column h3 {
-    color: #dfd10c;
+    color: #FEF8F3;
     text-shadow:
         -1px -1px 0 black,
         1px -1px 0 black,
@@ -65,22 +66,22 @@ header h1 {
     height: auto;
     border-radius: 8px;
     margin-top: 15px;
-    border: 3px solid #ddd;
+    border: 3px solid #BED476;
 }
 
 .caption {
     font-size: 0.9em;
     text-align: center;
-    color: #666;
+    color: #F5DD9C;
     font-style: italic;
 }
 
 .right-column {
     flex: 1;
-    background-color: #71c74a;
+    background-color: #e4ce91;
     padding: 20px;
     border-radius: 8px;
-    border: 5px solid #dfd10c;
+    border: 5px solid #BED476;
 }
 
 .right-column h3 {
@@ -88,15 +89,15 @@ header h1 {
     color: #dfd10c;
     font-size: 24px;
     text-shadow:
-        -1px -1px 0 green,
-        1px -1px 0 green,
-        -1px 1px 0 green,
-        1px 1px 0 green;
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
 }
 
 .comparative-box {
-    background-color: #ffffff;
-    border: 1px solid #eeff00;
+    background-color: #F5DD9C;
+    border: 1px solid #BED476;
     padding: 15px;
     margin-bottom: 15px;
     border-radius: 5px;
@@ -105,8 +106,8 @@ header h1 {
 
 .comparative-box h4 {
     margin-top: 0;
-    color: #cbdf17;
-    border-bottom: 2px solid #e4e006;
+    color: #F5DD9C;
+    border-bottom: 2px solid #F6B571;
     padding-bottom: 5px;
     text-shadow:
         -1px -1px 0 black,
@@ -122,15 +123,15 @@ header h1 {
 }
 
 .evento {
-    background-color: #f0f4c3;
-    border-left: 6px solid #9fa75e;
+    background-color: #F5DD9C;
+    border-left: 6px solid #BED476;
     padding: 15px;
     border-radius: 8px;
 }
 
 .evento h3 {
     font-size: xx-large;
-    color: #558b2f;
+    color: #FEF8F3;
     margin-bottom: 8px;
 }
 
@@ -144,11 +145,11 @@ li {
 }
 
 a {
-    color: #33691e;
+    color: #F6B571;
 }
 
 a:hover {
-    color: #689f38;
+    color: #F5DD9C;
     text-decoration: underline;
 }
 
@@ -167,19 +168,19 @@ a:hover {
     margin: 20px 0;
     border-radius: 15px;
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
-    color: white;
+    color: #BED476;
     list-style: none;
 }
 
 .destinos li ul {
     margin-top: 10px;
     padding-left: 20px;
-    color: #f0f0f0;
+    color: #FEF8F3;
 }
 
 .destino-cartagena {
-    background-color: #e5e910;
-    /* azul */
+    background-color: #F6B571;  /* Amarillo cálido */
+    color: #634628;             /* Marrón oscuro para contraste */
     text-shadow:
         -1px -1px 0 black,
         1px -1px 0 black,
@@ -188,8 +189,8 @@ a:hover {
 }
 
 .destino-mompox {
-    background-color: #11c05f;
-    /* morado */
+    background-color: #BED476;  /* Verde suave */
+    color: #634628;
     text-shadow:
         -1px -1px 0 black,
         1px -1px 0 black,
@@ -198,8 +199,8 @@ a:hover {
 }
 
 .destino-magangue {
-    background-color: #2e7d32;
-    /* verde oscuro */
+    background-color: #F5DD9C;  /* Beige claro */
+    color: #634628;
     text-shadow:
         -1px -1px 0 black,
         1px -1px 0 black,
@@ -208,8 +209,8 @@ a:hover {
 }
 
 .destino-montes {
-    background-color: #8dee3e;
-    /* naranja fuerte */
+    background-color: #cf995f;  /* Naranja tierra */
+    color: #FEF8F3;
     text-shadow:
         -1px -1px 0 black,
         1px -1px 0 black,
@@ -218,8 +219,8 @@ a:hover {
 }
 
 .destino-sanjuan {
-    background-color: #b8ca10;
-    /* rojo */
+    background-color: #8f6941;  /* Marrón medio */
+    color: #FEF8F3;
     text-shadow:
         -1px -1px 0 black,
         1px -1px 0 black,
@@ -228,8 +229,8 @@ a:hover {
 }
 
 .destino-banco {
-    background-color: #3949ab;
-    /* azul violeta */
+    background-color: #e4ce91;  /* Amarillo pálido */
+    color: #634628;
     text-shadow:
         -1px -1px 0 black,
         1px -1px 0 black,
@@ -238,8 +239,8 @@ a:hover {
 }
 
 .destino-palenque {
-    background-color: #455a64;
-    /* gris oscuro */
+    background-color: #745534;  /* Marrón oscuro */
+    color: #FEF8F3;
     text-shadow:
         -1px -1px 0 black,
         1px -1px 0 black,
@@ -249,44 +250,68 @@ a:hover {
 
 .logo-empresa {
     text-align: center;
-    /* centra horizontalmente el contenido */
     margin-top: 20px;
 }
 
 .logo {
     width: 350px;
-    /* puedes ajustar este valor */
+
     max-width: 100%;
     height: auto;
-    /* mantiene la proporción original */
+
     border-radius: 10px;
-    /* opcional: bordes redondeados */
+
 }
 
 .contenido li {
-    background-color: #ebe727;
-    /* fondo claro */
-    border: 2px solid #43af19;
-    /* borde en tono verde limón */
+    background-color: #FEF8F3;
+    border: 2px solid #F6B571;
     border-radius: 10px;
     padding: 12px;
     margin-bottom: 12px;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
     list-style-type: none;
-    /* quitar viñetas si no quieres las bolitas negras */
     transition: transform 0.2s;
     text-decoration: none;
-    /* quita la línea debajo */
     color: #333;
-    /* puedes cambiar el color del texto si lo deseas */
     font-weight: bold;
-    text-decoration: underline;
-    /* si quieres que se subraye solo al pasar el mouse */
-    color: #8bc34a;
-    /* efecto hover en color verde */
+    text-decoration: none;
+    color: #BED476;
+    /
 }
 
 .contenido li:hover {
     transform: scale(1.02);
-    background-color: #f0f4c3;
+    background-color: #BED476;
+}
+
+.cartagena-de-indias {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cartagena {
+    width: 500px;
+
+    max-width: 100%;
+    height: auto;
+
+    border-radius: 10px;
+
+}
+
+
+.rio-magangue {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.magangue {
+    width: 500px;
+
+    max-width: 100%;
+    height: auto;
+
+    border-radius: 10px;
+
 }
