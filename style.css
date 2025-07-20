@@ -300,6 +300,64 @@ a:hover {
 
 }
 
+.santa-cruz-mompox {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.mompox {
+    width: 500px;
+
+    max-width: 100%;
+    height: auto;
+
+    border-radius: 10px;
+
+}
+.san-juan-nepomuceno {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.Nepomuceno {
+    width: 500px;
+
+    max-width: 100%;
+    height: auto;
+
+    border-radius: 10px;
+
+}
+
+.destino-banco {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.el-banco {
+    width: 500px;
+
+    max-width: 100%;
+    height: auto;
+
+    border-radius: 10px;
+
+}
+
+.destino-palenque {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.san-basilio-palenque {
+    width: 500px;
+
+    max-width: 100%;
+    height: auto;
+
+    border-radius: 10px;
+
+}
 
 .rio-magangue {
     text-align: center;
